@@ -1,0 +1,8 @@
+Flask
+Flask-Login
+Flask-Admin
+Flask-SQLAlchemy
+Flask-WTF
+Flask-Mail
+Flask-Bcrypt
+Werkzeug

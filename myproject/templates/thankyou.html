@@ -1,0 +1,12 @@
+{% extends "webpage.html"%} {% block content %}
+<div class="jumbotron">
+    <h1>Thanks For Donating {{current_user.username}}</h1>
+    <h3>Your Items will be picked by a Logistics service</h3>
+
+    <a href="{{url_for('index')}}">Return to previous page</a>
+
+
+
+</div>
+
+{% endblock %}

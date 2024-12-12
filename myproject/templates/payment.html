@@ -1,0 +1,132 @@
+{% extends 'webpage.html' %} {% block content %}
+
+
+<style>
+    .container1 {
+        border-radius: 15px;
+        box-shadow: 12px 12px 22px rgb(66, 66, 66);
+        width: 1000px;
+        height: 500px;
+        border: 1px solid;
+        background-color: rgb(238, 232, 228);
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        justify-content: space-around;
+    }
+    
+    .container1 h1 {
+        text-align: center;
+    }
+    
+    .first-row {
+        display: flex;
+    }
+    
+    .owner {
+        width: 100%;
+        margin-right: 20px;
+    }
+    
+    .amount {
+        margin-right: 20px;
+    }
+    
+    .input-field {
+        border-radius: 20px;
+        border: 1px solid #999;
+    }
+    
+    .input-field input {
+        border-radius: 20px;
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 10px;
+    }
+    
+    .selection {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .selection select {
+        padding: 10px 20px;
+    }
+    
+    .forthis {
+        background-color: #f77676;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 18px;
+        transition: 0.5s;
+        border-radius: 10px;
+    }
+    
+    .forthis:hover {
+        background-color: dodgerblue;
+        border-radius: 10px;
+    }
+    
+    .cards img {
+        width: 100px;
+    }
+</style>
+
+<form method="post">
+    <div class="container1">
+        {{ form.hidden_tag() }}
+        <h1>Confirm Your Payment</h1>
+        <div class="first-row">
+            <div class="owner">
+                <h3>Owner</h3>
+                <div class="input-field">
+
+                    {{ form.Owner(class="input-field",placeholder="Enter Name on the card") }}
+                </div>
+            </div>
+            <div class="amount">
+                <h3>Amount</h3>
+                <div class="input-field">
+                    {{form.amount(class="input-field",placeholder="Enter Amount")}}
+                </div>
+            </div>
+            <div class="cvv">
+                <h3>CVV</h3>
+                <div class="input-field">
+                    {{form.Cvv(class="input-field",placeholder="***")}}
+                </div>
+            </div>
+        </div>
+        <div class="second-row">
+            <div class="card-number">
+                <h3>Card Number</h3>
+                <div class="input-field">
+                    {{form.Card(class="input-field",placeholder="Enter Card Number")}}
+                </div>
+            </div>
+        </div>
+        <div class="third-row">
+            <h3>Card Number</h3>
+            <div class="selection">
+                <div class="date">
+                    {{form.Month()}} {{form.year()}}
+
+                </div>
+                <div class="cards">
+                    <img src="static/images/mc.png" alt="">
+                    <img src="static/images/vi.png" alt="">
+                    <img src="static/images/pp.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        {{form.submit(class="forthis")}}
+
+    </div>
+</form>
+{% endblock %}

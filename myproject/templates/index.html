@@ -1,0 +1,22 @@
+{% extends "webpage.html" %} {% block content %}
+    
+    <div class=indexpage>
+            <h2 id="indexinner"><B>You Are Logged In!</B></h2>
+            {% if current_user.is_authenticated %}
+            <h2 id="indexinner"><B>Welcome {{current_user.username}}!</B></h2>
+                
+            <a class="btn" id="indexinner" href="{{url_for('charity')}}">FILL UP THE FORM TO DONATE</a>
+            
+            <h3 id="indexinner" style="font-size:xx-large;">Want to Donate in Funds??</h3>
+           
+            <a class="btn" id="indexinner" href="{{url_for('payment')}}">CLICK HERE TO DONATE MONEY </a>
+             {% else %}
+            <p id="indexinner">Please login or register</p>
+            </div>
+    {% endif %}
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends 'webpage.html' %} {% block content %}
+   
+   
+   <div class="bodyofregister">
+    <div class="container_register">
+        <form method="post" class="form_registration">
+            <div class="heading">
+                <img src="static/images/logo.png" class="logo">
+                <h1>Registration Form</h1>
+            </div>
+            <!--Form-->
+            {{ form.hidden_tag() }}
+            
+            <div class="wrap2">
+                <label class="label_register">E-Mail</label>
+                {{ form.email(class="input_register",type="text") }}
+                <span class="focus-input2"></span>
+            </div> 
+            <div class="wrap2">
+                <label class="label_register">Username</label>
+                {{ form.username(class="input_register",type="text") }}
+                <span class="focus-input2"></span>
+            </div>
+            
+            <div class="wrap2">
+                <label class="label_register">Create Password </label>
+                {{ form.password(class="input_register",type="text") }}
+                <span class="focus-input2"></span>
+            </div>
+            <div class="wrap2">
+                <label class="label_register">Confirm Password</label>
+                {{ form.pass_confirm(class="input_register",type="text") }}
+                <span class="focus-input2"></span>
+            </div>
+
+            {{ form.submit(class="btn_register") }}
+        </form>            
+
+        <!-----Image----->
+        <div class="image">
+               <img src="static/images/regisj0.jpg" class="img_register" alt=""/>
+        </div>
+    </div>
+</div>
+</html>
+
+
+{% endblock %}

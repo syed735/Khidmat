@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KHIDMAT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <!------just a try-------->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--------w3 start----->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .navbar1 {
+            display: flex;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.4);
+            border-radius: 30px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .welcome {
+            padding-right: 20px;
+            position: absolute;
+            right:10px;
+            color: #000;
+            font-size: 150%;
+            font-family: 'Bree Serif', serif;
+        }
+        
+        .khidmah {
+            padding-left: 15px;
+            color: #000;
+            font-size: 400%;
+            font-family: 'Bree Serif', serif;
+        }
+        
+        #home {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        nav {
+            flex: 1;
+            display: inline-block;
+            text-align: left;
+            margin-left: 10px;
+        }
+        
+        nav ul {
+            display: inline-block;
+            list-style-type: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        nav ul li {
+            display: inline-block;
+            margin-right: 30px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 150%;
+            -webkit-text-stroke: 0.2px rgb(122, 122, 122);
+        }
+        
+        .col-2 p {
+            text-decoration: none;
+            color: rgb(255, 254, 254);
+            font-size: 150%;
+        }
+        
+        .containermain {
+            max-width: 1600px;
+            margin: 0 auto;
+            background: #e4a3a3;
+            background-image: url("static/images/donate2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 820px;
+            background-position: center;
+            padding: 20px;
+        }
+        
+        .row1 {
+            display: flex;
+            align-items: left;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        
+        .quotearea {
+            flex-basis: 50%;
+            min-width: 300px;
+            font-family: 'Oswald', sans-serif;
+            color: rgb(255, 255, 255);
+            font-size: 150%;
+            margin-right: 700px;
+        }
+        
+        #quote {
+            font-size: 230%;
+            font-family: 'Oswald', sans-serif;
+        }
+        
+        .col-2 img {
+            max-width: 100%;
+            padding-left: 10cm;
+        }
+        
+        .col-2 h1 {
+            font-size: 40jjjjpx;
+            line-height: 50px;
+            margin: 25px 0;
+            font-size: 350%;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: rgb(54, 163, 236);
+            color: #fff;
+            padding: 8px 30px;
+            margin: 30px 0;
+            border-radius: 30px;
+            transition: background 0.3s;
+            font-size: 100%;
+            box-shadow: 12px 12px 22px rgb(97, 97, 97);
+        }
+        
+        .btn:hover {
+            background: #1c4aca;
+            color: white;
+        }
+        
+        .header {
+            background: radial-gradient(#fff, #f9f9f9);
+            max-height: 110%;
+        }
+        
+        .header .row1 {
+            margin-top: 50px;
+        }
+        
+        .col-3 h4 {
+            font-size: 40jjjjpx;
+            line-height: 50px;
+            margin: 25px 0;
+        }
+        
+        .smallcatelog {
+            max-width: 1080px;
+            margin: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        
+        .col-4 img {
+            width: 100%;
+        }
+        
+        .title::after {
+            content: '';
+            background: #ffffff;
+            width: 150px;
+            height: 5px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .div1 {
+            background-color: rgb(255, 255, 255);
+            float: right;
+            width: 47%;
+            height: 700px;
+            margin-right: 2%;
+            background-image: url("static/images/potrait.png");
+            background-image: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .div1[data-scroll="in"] {
+            animation: slide-pic 0.7s;
+        }
+        
+        @keyframes slide-pic {
+            0% {
+                opacity: 0;
+                transform: scale3d(.75, .75, 1);
+            }
+            40% {
+                opacity: 0;
+                transform: scale3d(.75, .75, 1);
+            }
+            100% {
+                opacity: 1;
+                transform: scale3d(1, 1, 1);
+            }
+        }
+        
+        .div2 {
+            background-color: rgb(54, 163, 236);
+            width: 47%;
+            margin-left: 2%;
+            height: 700px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        
+        .div2 p[data-scroll="in"] {
+            animation: slide-up 0.8s;
+        }
+        
+        @keyframes slide-up {
+            from {
+                opacity: 0.5;
+                line-height: 80px;
+            }
+            to {
+                opacity: 1;
+                line-height: 34px;
+            }
+        }
+        
+        .w3-center[data-scroll="in"] {
+            animation: slide-up1 1s;
+        }
+        
+        @keyframes slide-up1 {
+            from {
+                opacity: 0.5;
+                line-height: 80px;
+            }
+            to {
+                opacity: 1;
+                line-height: 28px;
+            }
+        }
+        
+        .div2 h1 {
+            text-align: center;
+            font-size: 200%;
+        }
+        
+        .div2 p {
+            padding-top: 110px;
+            margin-left: 30px;
+            margin-right: 25px;
+            align-items: center;
+            font-size: 150%;
+            font-family: 'Oswald', sans-serif;
+        }
+        
+        .title {
+            font-family: 'Oswald', sans-serif;
+            padding-top: 20px;
+            text-align: center;
+            margin: 0 auto 80px;
+            position: relative;
+            line-height: 60px;
+            color: rgb(0, 0, 0);
+        }
+        
+        .title[data-scroll="in"] {
+            animation: slide-push 1s;
+        }
+        
+        @keyframes slide-push {
+            from {
+                opacity: 0.5;
+                line-height: 200px;
+            }
+            to {
+                opacity: 1;
+                line-height: auto;
+            }
+        }
+        
+        .footer {
+            height: 100px;
+            background: rgb(34, 34, 34);
+            color: #8a8a8a;
+            font-size: 14px;
+            padding: 60px 0 2px;
+        }
+        
+        .footer p {
+            color: #8a8a8a
+        }
+        
+        .footer h3 {
+            color: #fff;
+            margin-bottom: 20pxl;
+        }
+        
+        .footer-col-1 {
+            padding-left: 50px;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-col-2,
+        .footer-col-3,
+        .footer-col-4 {
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-col-1 {
+            flex-basis: 30%;
+        }
+        
+        .footer-col-2 {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .footer-col-2 img {
+            width: 180px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-col-3,
+        .footer-col-4 {
+            flex-basis: 125px;
+            text-align: center;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        .foots {
+            background-color: rgb(34, 34, 34);
+        }
+        /********for_login******/
+        
+        .bodytype {
+            box-sizing: border-box;
+        }
+        
+        .row {
+            background: white;
+            border-radius: 30px;
+            box-shadow: 12px 12px 22px grey;
+        }
+        
+        .btn1 {
+            border: none;
+            outline: none;
+            height: 50px;
+            width: 100%;
+            background-color: rgb(7, 94, 207);
+            color: white;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        
+        .btn1:hover {
+            background: white;
+            border: 3px solid;
+            color: rgb(7, 94, 207);
+        }
+        
+        .inputText {
+            width: 300px;
+            height: 30px;
+            border: double;
+            border-radius: 2px;
+            padding-left: 8px;
+        }
+        
+        .indexpage {
+            background-color: rgb(255, 255, 255, 0.5);
+            width: 80%;
+            margin-left: 2%;
+            height: 300px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            height: 40%;
+        }
+        
+        #indexinner {
+            margin-left: 50px;
+        }
+        
+        .donatepage {
+            background-color: rgb(255, 255, 255, 0.5);
+            width: 95%;
+            margin-left: 2%;
+            height: 400px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        
+        .donateright {
+            float: right;
+            width: 47%;
+            position: absolute;
+            margin-left: 700px;
+            top: 30%;
+            font-size: larger;
+            left: 20%;
+        }
+        
+        .donateleft {
+            width: 47%;
+            font-size: large;
+        }
+        
+        #donatesubmit {
+            position: absolute;
+            left: -42%;
+        }
+        /*******registeration_page*******/
+        
+        .bodyofregister {
+            margin: 0;
+            padding: 0;
+            background-color: #ced3e7;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        input {
+            outline: none;
+            border: none;
+        }
+        
+        .heading {
+            width: 80%;
+        }
+        
+        .logo {
+            width: 100px;
+        }
+        
+        .heading h1 {
+            font-size: 2rem;
+            font-weight: 400;
+            color: #412277;
+        }
+        
+        .container_register {
+            width: 80%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            height: 90vh;
+            background-color: #f8f9fb;
+            display: flex;
+            box-shadow: 5px 10px 38px rgba(0, 0, 0, 0.2);
+            border-radius: 30px;
+            top: 65%;
+            
+        }
+        
+        .form_registration {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 55%;
+        }
+        
+        .image {
+            width: 45%;
+        }
+        
+        .img_register {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+        
+        .wrap2 {
+            width: 80%;
+            position: relative;
+            border-bottom: 2px solid #b2b2b2;
+            margin-bottom: 13px;
+        }
+        
+        .wrap {
+            display: flex;
+            width: 80%;
+            justify-content: center;
+        }
+        
+        .f1 {
+            border-bottom: 2px solid #b2b2b2;
+            width: 40%;
+            position: relative;
+        }
+        
+        .f2 {
+            border-bottom: 2px solid #b2b2b2;
+            margin-left: auto;
+            width: 40%;
+            position: relative;
+        }
+        
+        .label_register {
+            font-size: 12px;
+            color: #676768;
+            line-height: 1.5;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            width: 80%;
+            min-height: 25px;
+            border-bottom: none;
+            padding: 15px 0px;
+            margin-top: 10px;
+            margin-bottom: 0px;
+            padding-bottom: 2px;
+        }
+        
+        .input_register {
+            display: block;
+            width: 100%;
+            font-size: 18px;
+            background: transparent;
+            color: #0f0f0f;
+            font-weight: 500;
+            padding: 10px 0px;
+        }
+        /************BUTTON************/
+        
+        .btn_register {
+            margin-top: 20px;
+            width: 200px;
+            height: 50px;
+            border-radius: 40px;
+            outline: none;
+            font-weight: 500;
+            font-size: 1rem;
+            border: none;
+            background: #445a94;
+            color: #fff;
+            box-shadow: 8px 10px 30px rgba(0, 0, 0, 0.2);
+            transition: 0.4s;
+        }
+        
+        .btn_register:hover {
+            background: #4b2888;
+            color: #fff;
+        }
+        /******INPUT ANIMATION SPAN******/
+        
+        .focus-input {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+        
+        .focus-input::before {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            transition: all 0.6s;
+            background: #412277;
+        }
+        
+        input:focus+.focus-input::before {
+            width: 100%;
+        }
+        
+        .has-value.input+.focus-input::before {
+            width: 100%;
+        }
+        
+        .focus-input2 {
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+        
+        .focus-input2::before {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            transition: all 0.6s;
+            background: #412277;
+        }
+        
+        input:focus+.focus-input2::before {
+            width: 100%;
+        }
+        
+        .has-value.input+.focus-input2::before {
+            width: 100%;
+        }
+        
+        input[type="number"] {
+            overflow: hidden;
+        }
+        
+        .btn_website {
+            display: inline-block;
+            background: rgb(255, 255, 255, 0.3);
+            color: rgb(255, 255, 255);
+            margin: 0px 5px;
+            padding: 1px 15px;
+            border-radius: 10px;
+            transition: background 0.3s;
+            font-size: 100%;
+            box-shadow: 12px 12px 22px rgb(59, 59, 59);
+            text-decoration: none;
+        }
+        
+        .btn_website:hover {
+            background: rgb(54, 163, 236);
+        }
+        
+        .btn_website a {
+            text-decoration: none;
+        }
+        
+        .btn_website a:hover {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        
+        .logo_after {
+            text-align: right;
+        }
+        
+        .khidmah1_after {
+            right: 30px;
+        }
+        
+        .welcome_logo {
+            height: 30px;
+            width: 30px;
+        }
+        .jumbotron{
+           border-radius: 50px;
+           background-color: rgb(248, 249, 251,0.8);
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="containermain">
+            <div class="navbar1">
+                <div class="logo">
+                    <img src="static/images/logo.png" width="125px">
+                </div>
+                <div class="khidmah">
+                    <B>&nbspKHIDMAT</B>
+                </div>
+
+
+
+                <nav>
+                    <ul>
+                        <br>
+                        <li class="btn_website"><a href="{{url_for('home')}}"><strong>HOME</strong></a></li>| {% if current_user.is_authenticated %}
+                        <li class="btn_website"><a href="{{url_for('index')}}">DONATE<span class="sr-only">(current)</a></li>
+                        |
+                        <li class="btn_website"><a href="{{url_for('logout')}}">LOGOUT<span class="sr-only">(current)</a></li>
+                        | {% else %}
+                        <li class="btn_website"><a href="{{url_for('login')}}">LOGIN<span class="sr-only">(current)</a></li>
+                        |
+                        <li class="btn_website"><a href="{{url_for('register')}}">REGISTER<span class="sr-only">(current)</a></li>
+                        | {% endif %}
+                        <li class="btn_website"><a href="{{url_for('admin')}}">ADMIN<span class="sr-only">(current)</a></li>
+
+
+                        {% if current_user.is_authenticated%}
+
+                        <li class="welcome">
+                            <B> WELCOME {{current_user.username}} </B><img class="welcome_logo" src="static/images/user.png">
+                        </li>
+
+                        {% endif %}
+
+
+
+
+
+
+
+
+
+
+                    </ul>
+
+                </nav>
+            </div>
+            <div class="row1">
+
+                {% block content %} {% endblock %}
+
+            </div>
+        </div>
+    </div>
+    <!----------categories--------->
+    <br>
+    <br>
+    <br>
+    <div class="div1">
+        <img src="" height="px" width="px">
+    </div>
+    <div class="div2">
+        <h1 class="title">Who We are and What We do!</h1>
+        <p>Khidmat, located in the heart of Hyderabad, is a charitable foundation dedicated to helping those in need. With the dedication of our volunteers and partners, we strive to improve the lives of everyone who needs help within the community.</p>
+    </div>
+    </div>
+
+    <!----our work section-->
+    <div class="w3-container" style="padding:128px 16px" id="work">
+        <h3 class="w3-center">OUR WORK</h3>
+        <p class="w3-center w3-large">What we've done for people</p>
+
+        <div class="w3-row-padding" style="margin-top:64px">
+            <div class="w3-col l3 m6">
+                <img src="static/images/pic_1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="static/images/pic_2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="static/images/pic_3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="static/images/pic4.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-section">
+            <div class="w3-col l3 m6">
+                <img src="static/images/pic_4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="static/images/pic_5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="static/images/pic_6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+            </div>
+            <div class="w3-col l3 m6">
+                <img src="static/images/pic_7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+            </div>
+        </div>
+    </div>
+    <!-----about us section-->
+    <div class="w3-container" style="padding:128px 16px" id="about">
+        <h3 class="w3-center">ABOUT OUR ORGANISATION</h3>
+        <p class="w3-center w3-large">Key features of Khidmat</p>
+        <div class="w3-row-padding w3-center" style="margin-top:64px">
+            <div class="w3-quarter">
+                <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+                <p class="w3-large">Responsive</p>
+                <p>Our website is the center of our digital eco-system, like a brick and mortar location, the experience matters once a customer enters, just as much as the perception they have of you before they walk through the door.</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Passion</p>
+                <p>Cultivating uniformity in the hearts of people by making all possible efforts to kindle the flame of love and affection by way of providing the marginalized all possible aid, support, and services</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Design</p>
+                <p>YOU'LL LOVE IT, This site is so EASY to navigate through, and EASY to get back on track if you want to Explore. It is easy to follow along and definitely convienent because you can pull up whenever you need </p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+                <p class="w3-large">Support</p>
+                <p>We make a living by what we get, but we make a life by what we give.We ourselves feel that what we are doing is just a drop in the ocean. But the ocean would be less because of that missing drop.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Promo Section "Statistics" -->
+    <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+        <div class="w3-quarter">
+            <span class="w3-xxlarge">14+</span>
+            <br>volunteers
+        </div>
+        <div class="w3-quarter">
+            <span class="w3-xxlarge">55+</span>
+            <br>Projects Done
+        </div>
+        <div class="w3-quarter">
+            <span class="w3-xxlarge">89+</span>
+            <br>Happy Clients
+        </div>
+        <div class="w3-quarter">
+            <span class="w3-xxlarge">150+</span>
+            <br>Charity Events
+        </div>
+    </div>
+
+
+
+
+    <!-- Contact Section -->
+    <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+        <h3 class="w3-center">CONTACT</h3>
+        <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+        <div style="margin-top:48px">
+            <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Hyderabad, Telangana</p>
+            <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +91 7337265233</p>
+            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@khidmat.com</p>
+            <br>
+            <form action="/action_page.php" target="_blank">
+                <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+                <p>
+                    <button class="w3-button w3-black" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+                </p>
+            </form>
+            <!-- Image of location/map -->
+            <img src="static/images/screenshot.png" class="w3-image" style="width:100%;margin-top:48px">
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="foots">
+            <div class="row1">
+                <div class="footer-col-1">
+                    <h3>Download Our app</h3>
+                    <p>Download app for android or ios </p>
+                </div>
+                <br>
+                <div class="footer-col-2">
+                    <img src="static/images/logo.png" width="125px">
+                    <p>Giving is not just about making a donation,<br> it's about <b>making a difference.</b><br><br>© Copyright - Khidmat2022 - All Rights Reserved. </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons
+                        </li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Us!!</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>Facebook</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="static/js/scroll-out.js"></script>
+        <script type="text/javascript">
+            ScrollOut({
+                targets: 'h1,p,.div1,.w3-center,.w3-col l3 m6'
+            })
+        </script>
+</body>
+
+</html>
